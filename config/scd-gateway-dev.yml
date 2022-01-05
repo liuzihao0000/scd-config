@@ -5,7 +5,7 @@ hystrix:
       execution:
         isolation:
           thread:
-            #超时时间，默认1000ms
+            #超时时间，默认1000ms即1秒
             #注意：这里的时间大小取决于ribbon的ReadTimeout，ConnectTimeout，超时重试次数，重试负载均衡次数。
             #计算公式：(1+MaxAutoRetriesNextServer+(1+MaxAutoRetriesNextServer)*MaxAutoRetries)*(ReadTimeout+ConnectTimeout)，
             #考虑网络因素，计算结果最好再加1秒
