@@ -1,5 +1,5 @@
 spring:
-  #mysql数据库基础信息
+  #mysql数据库基础信息 
   datasource:
     username: root
     password: root
